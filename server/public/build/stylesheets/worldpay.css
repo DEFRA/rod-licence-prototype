@@ -1,0 +1,405 @@
+/* basic styles */
+body {
+  font-family: Arial,Helvetica,Verdana,Geneva,Sans-Serif !important;
+}
+
+body .container {
+  width: 768px;
+}
+
+body .two table {
+  width: 100%;
+}
+
+body td.one {
+  vertical-align: middle;
+}
+
+body td.one td.two {
+  padding: .4em 0;
+  padding-left: 10px;
+}
+
+td.three {
+  padding: .8em 0;
+}
+
+td.three h2 {
+  font-size: 1.4em;
+  margin-left: 10px;
+  font-family: Arial,Helvetica,Verdana,Geneva,Sans-Serif !important;
+}
+
+body td.width190 {
+  width: auto;
+  /*padding: .4em 0;*/
+}
+
+body td.one.width190.paymentDetailsL {
+  width: 38%;
+}
+
+@-moz-document url-prefix() {
+  body td.one.width190.paymentDetailsL {
+    width: 240px;
+  }
+}
+
+body .title h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 1.2em;
+  font-family: Arial,Helvetica,Verdana,Geneva,Sans-Serif !important;
+}
+
+body td.one td.one a {
+  display: none;
+}
+
+body td.two a.twoinstr {
+  display: inline-block;
+}
+
+body td.two td.two nobr span,
+body td.one td.two td.two span {
+  /*display: none;*/
+  font-family: Arial,Helvetica,Verdana,Geneva,Sans-Serif !important;
+}
+
+body td.two td.two nobr span em,
+body td.one td.two td.two span em {
+  font-size: .8em !important;
+}
+
+body td.one table .one span {
+  /*font-weight: bold; */
+}
+
+body td.one td.two td.two.width190 span {
+  display: inline-block;
+}
+
+table td span,
+table td input,
+table td select {
+  font-size: 1.1em !important;
+}
+
+body td.two.width190 label span {
+  font-size: 1em !important;
+}
+
+table td input {
+  padding: .3em;
+}
+
+body label,
+body .width190 span {
+  font-family: Arial,Helvetica,Verdana,Geneva,Sans-Serif !important;
+  font-size: 1.2em !important;
+  color: #002469;
+  line-height: 2em;
+}
+
+body nobr span {
+  /*	background-color: green;*/
+}
+
+table td select {
+  -webkit-appearance: menulist;
+  box-sizing: border-box;
+  align-items: center;
+  border: 1px solid;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  white-space: pre;
+  -webkit-rtl-ordering: logical;
+  color: black;
+  background-color: white;
+  cursor: default;
+  margin: 0em;
+  font-size: 2em;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+}
+
+.table3 {
+  *width: auto;
+  /* IE7 and below */
+}
+
+/* payment button */
+label.makePayment {
+  border-radius: 10px;
+  background-color: #002469;
+  margin-left: 263px;
+  padding: 10px;
+  float: left;
+  *display: inline-block;
+  /* IE7 and below */
+}
+
+label.makePayment b {
+  margin-right: 10px;
+}
+
+label.makePayment span {
+  color: #fff !important;
+  font-family: Arial,Helvetica,Verdana,Geneva,Sans-Serif !important;
+  display: inline-block;
+  margin-left: 40px;
+  *border: solid 1px #002469;
+  /* IE7 and below */
+  *display: inline-block;
+  /* IE7 and below */
+}
+
+label.makePayment:hover {
+  cursor: pointer;
+  cursor: hand;
+  background-color: #333;
+}
+
+label.makePayment:hover b {
+  color: #fff;
+}
+
+label.makePayment input {
+  display: inline-block;
+  position: absolute;
+  margin-left: -200px;
+  margin-top: -2px;
+  margin-top: 2px\9;
+  /* IE8 and below */
+}
+
+* + html label.makePayment input {
+  margin-left: -260px;
+  /* IE7 and below */
+}
+
+/* IE8 uses \0 */
+@media all\0 {
+  label.makePayment input {
+    margin-left: -260px;
+  }
+}
+
+#required {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.cancelLink {
+  color: #002469;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+#print_buttons {
+  display: none;
+}
+
+#print_buttons td {
+  background-color: #FFF;
+}
+
+#print_buttons h3 {
+  margin-bottom: 10px;
+}
+
+#print_buttons td em,
+.brand span,
+.footer span {
+  font-family: Arial,Helvetica,Verdana,Geneva,Sans-Serif !important;
+  font-style: normal;
+  color: black;
+}
+
+#print_buttons td em a,
+a.brand {
+  color: #002469;
+}
+
+body hr {
+  color: #DDD;
+  background-color: #DDD;
+  height: 1px;
+  border-style: none;
+  margin: 2em 0;
+}
+
+/* input size */
+input#cardNoInput,
+input#name,
+input#address1,
+input#address2,
+input#address3,
+input#town,
+input#tel,
+input#email {
+  width: 20em;
+  width: 18em\9;
+  /* IE8 and below */
+}
+
+select[name="country"] {
+  margin-top: .4em;
+}
+
+.anchor {
+  position: relative;
+  top: -20px;
+  display: block;
+  height: 0;
+  width: 0;
+}
+
+a.jumplink,
+a.jumplink:visited,
+a.jumplink:active {
+  color: red;
+}
+
+a.jumplink:hover {
+  color: #a80000 !important;
+}
+
+.containercell ul {
+  display: inline-block;
+}
+
+.containercell ul li {
+  margin: 4px 0;
+}
+
+.topLabel {
+  display: none;
+  font-size: 1.1em !important;
+}
+
+.expiryLabel {
+  margin-bottom: 4px;
+}
+
+.paymentDetailsL {
+  display: block;
+  /*width:39% !important;*/
+}
+
+.paymentDetailsR {
+  width: 100%;
+}
+
+.paymentDetailsTable {
+  padding: 20px;
+}
+
+body .paymentDetailsTable .topLabel {
+  font-size: 19px !important;
+  margin-bottom: 10px;
+}
+
+body .paymentDetailsTable .width190 span {
+  line-height: 1.6em;
+}
+
+body .paymentDetailsTable td {
+  padding-bottom: 0px;
+}
+
+body .paymentDetailsTable .width190 span .topLabel {
+  margin-bottom: 0;
+}
+
+body .twoinstr span {
+  text-decoration: underline;
+}
+
+body ul li,
+body .paymentDetailsTable span b,
+body .error span {
+  font-family: Arial,Helvetica,Verdana,Geneva,Sans-Serif !important;
+}
+
+/* mobile */
+body.mobile .two.width190 {
+  /*display:none;*/
+}
+
+body.mobile .two.width190,
+body.mobile .two,
+body.mobile .two table,
+body.mobile .container,
+body.mobile input#cardNoInput,
+body.mobile input#name,
+body.mobile input#address1,
+body.mobile input#address2,
+body.mobile input#address3,
+body.mobile input#town,
+body.mobile input#tel,
+body.mobile input#email {
+  width: 100%;
+  width: 98%\9;
+  /* IE8 and below */
+}
+
+body.mobile input[type=text],
+body.mobile select[name=country] {
+  max-width: 100% !important;
+  width: 100%;
+}
+
+body.mobile td.one td.two {
+  padding-right: 10px;
+}
+
+body.mobile label.makePayment {
+  margin-left: 10px;
+}
+
+body.mobile .cancelLink {
+  margin-right: 20px;
+}
+
+body.mobile .topLabel {
+  display: block;
+}
+
+body.mobile .paymentDetailsL {
+  display: none;
+}
+
+body.mobile .paymentDetailsTable td,
+body.mobile .paymentDetailsTable td span {
+  width: 100%;
+  font-family: Arial,Helvetica,Verdana,Geneva,Sans-Serif !important;
+}
+
+body.mobile .containercell h1 {
+  font-size: 1.2em;
+  padding: 0 20px;
+}
+
+body.mobile td.three h2 {
+  font-size: .8em;
+}
+
+body.mobile table td.brand span,
+body.mobile table td.footer span {
+  font-size: .6em !important;
+}
+
+body.mobile #print_buttons span em a {
+  font-size: 16px !important;
+}

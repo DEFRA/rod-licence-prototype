@@ -1,0 +1,157 @@
+<!-- header.html $Revision$ -->
+<body>
+	<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr>
+			<td style="width:100%;" valign="top" align="left">
+				<table width="100%" cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<td colspan="5" valign="top" align="left" style="text-align:center;">
+							<table cellpadding="2" cellspacing="0" border="0" width="100%" class="table3">
+								<tr>
+									<td style="width:<wpdisplay disp=wp.container.width>" valign="top" align="left">
+
+{{{content}}}
+
+
+								</td>
+							</tr>
+
+						</table>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="5" class="footer"><wpdisplay msg="footer.copy" stylize=footer></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- <script>
+$( document ).ready(function() {
+	//hide start again
+	$('span').find('b:contains("Start again")').closest('nobr').css( "display", "none" );
+	//link cancel text
+	var cancelLink = $('span').find('b:contains("Cancel")').closest('nobr').find('a').attr('href');
+	//hide cancel text
+	$('span').find('b:contains("Cancel")').css( "display", "none" );
+	//hide cancel image
+	$('span').find('b:contains("Cancel")').closest('nobr').find('img').css( "display", "none" );
+	//attach cancel link
+	$('label[for="op-PMMakePayment"]').after('<a href="'+cancelLink+'" class="cancelLink">Cancel</a>');
+	$('label[for="op-PMMakePayment"]').attr('class', 'makePayment');
+	//remove fax field and label
+	$('#fax').closest('tr').remove();
+	//remove region field and label
+	$('#region').closest('tr').remove();
+	//remove phone field and label
+	$('#tel').closest('tr').remove();
+	//remove email field and label
+	$('#email').closest('tr').remove();
+	//revove * Indicates a required field
+	$('td').find('em:contains("Indicates a required field")').closest('td').css( "display", "none" );
+	//remove asterix
+	var findAsterix = $('span,label');
+	for (var i = 0; i < findAsterix.length; ++i) {
+	  findAsterix[i].innerHTML = findAsterix[i].innerHTML.replace(/\*?/g,'');
+	}
+	var findSpace = $('span');
+	for (var j = 0; j < findSpace.length; ++j) {
+	  findSpace[j].innerHTML = findSpace[j].innerHTML.replace(/\&nbsp;/g,'');
+	}
+	//create validation jump links
+	function vaidationLinks(string, id, field){
+		var element = $('ul').find('li:contains("'+string+'")');
+		if(element.length != 0 ){
+			element.wrapInner('<a href="#'+id+'" class="jumplink"></a>');
+			$('#'+field+'').css('border', 'solid 1px red');
+			$('body .width190 label[for="'+field+'"] span').css('color', 'red');
+			$('input#'+field).closest('td').prepend('<span id="'+id+'" class="anchor"></span>');
+		}
+	}
+	//init jump links
+	vaidationLinks('card number', 'card', 'cardNoInput');
+	vaidationLinks('security code', 'security', 'cardCVV');
+	vaidationLinks('cardholder name', 'cardname', 'name');
+	vaidationLinks('address 1', 'address_1', 'address1');
+	vaidationLinks('town/city', 'towncity', 'town');
+	vaidationLinks('postcode', 'post_code', 'postcode');
+	//card expiry
+	var selectExpiry = $('ul').find('li:contains("expiry date")');
+	if(selectExpiry.length != 0 ){
+		selectExpiry.wrap('<a href="#expiry" class="jumplink"></a>');
+		$('[name="cardExp.day"], [name="cardExp.month"], [name="cardExp.year"]').css('border', 'solid 1px red');
+		$('td').find('span:contains("Expiry date")').css('color', 'red');
+		$('select[name="cardExp.month"]').closest('td').prepend('<span id="expiry" class="anchor"></span>');
+	}
+	//country
+	var selectCountry = $('ul').find('li:contains("country")');
+	if(selectCountry.length != 0 ){
+		selectCountry.wrap('<a href="#countrySelect" class="jumplink"></a>');
+		$('[name="country"]').css('border', 'solid 1px red');
+		$('td').find('span:contains("Country")').css('color', 'red');
+		$('select[name="country"]').closest('td').prepend('<span id="countrySelect" class="anchor"></span>');
+	}
+	//smooth scroll
+	$('a[href*=#]:not([href=#])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		  var target = $(this.hash);
+		  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		  if (target.length) {
+		    $('html,body').animate({
+		      scrollTop: target.offset().top
+		    }, 800);
+		    return false;
+		  }
+		}
+	});
+	//on window resize detect mobile and add class
+	function resize(){
+		if ( $(document).width() > 772){
+		$('body').removeClass('mobile');
+			$('body .two.width190').css('display','block');
+			$('body .paymentDetailsL').css('display','block');
+		} else{
+			$('body').addClass('mobile');
+			$('body .two.width190').css('display','none');
+			$('body .paymentDetailsL').css('display','none');
+		}
+	}
+	resize();
+	$(window).on('resize ready', function(){
+		resize();
+	});
+
+	//clone label
+	$('label').each(function () {
+		$(this).clone().insertBefore($(this).closest('tr').find('input[type="text"]')).addClass('topLabel');
+	});
+	//clone Country, Expiry date
+	$('td.width190').find('span:contains("Country")').clone().insertBefore($('span:contains("Country")').closest('tr').find('select[name="country"]')).addClass('topLabel countryLabel');
+	$('td.width190').find('span:contains("Expiry date")').clone().insertBefore($('span:contains("Expiry date")').closest('tr').find('select[name="cardExp.month"]')).addClass('topLabel expiryLabel');
+	//add paymentDetails classes
+	$('.one.width190').find('span:contains("Payment reference")').closest('tr').find('td:first').addClass('paymentDetailsL').next('td').addClass('paymentDetailsR').after( '<td colspan="2" rowspan="4" align="right" valign="top" class="one paymentDetailsCard" style="vertical-align: bottom;"></td>' );
+	$('.one.width190').find('span:contains("Payment method")').closest('tr').find('td:first').addClass('paymentDetailsL').next('td').addClass('paymentDetailsR');
+	$('.one.width190').find('span:contains("Description")').closest('tr').find('td:first').addClass('paymentDetailsL').next('td').addClass('paymentDetailsR');
+	$('.one.width190').find('span:contains("Amount")').closest('tr').find('td:first').addClass('paymentDetailsL').next('td').addClass('paymentDetailsR');
+	//add labels on top of inuts
+	$('.one.width190').find('span:contains("Payment reference")').clone().insertBefore($('span:contains("Payment reference")').closest('tr').find('b')).addClass('topLabel');
+	$('.one.width190').find('span:contains("Payment method")').clone().insertBefore($('span:contains("Payment method")').closest('tr').find('b')).addClass('topLabel');
+	$('.one.width190').find('span:contains("Description")').clone().insertBefore($('span:contains("Description")').closest('tr').find('b')).addClass('topLabel');
+	$('.one.width190').find('span:contains("Amount")').clone().insertBefore($('span:contains("Amount")').closest('tr').find('b')).addClass('topLabel');
+	//add a class to control paymentDetails
+	$('.one.width190').find('span:contains("Payment reference")').closest('table').addClass('paymentDetailsTable');
+	//add for mobile
+	$('head').append('<meta name="viewport" content="width=device-width, initial-scale=1">');
+	//add optional
+	$('label[for="address2"] span').text('Address 2 (optional)');
+	$('label[for="address3"] span').text('Address 3 (optional)');
+	//get card image and add to cell
+	$('.paymentDetailsCard').html($('.paymentDetailsTable td[rowspan=3] img'));
+	//remove original card
+	$('.paymentDetailsTable td[rowspan=3]').remove();
+});
+
+</script> -->

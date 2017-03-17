@@ -5,11 +5,13 @@ module.exports = [].concat(
   require('./feedback-thankyou'),
   require('./landing'),
 
-
   // Done screen
   require('./done-screen'),
   require('./buy/order-complete-four'),
 
+  // Worldpay
+  require('./pay/worldpay'),
+  require('./pay/worldpay-confirmation'),
 
   // Multibuy
   require('./multibuy-screen'),
