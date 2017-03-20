@@ -1,31 +1,40 @@
-<!-- header.html $Revision$ -->
+{{> topOfPage }}
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8" lang="{{ htmlLang }}"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="{{ htmlLang }}"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ pageTitle }}</title>
+
+    <!--[if gt IE 8]><!--><link href="{{{ assetPath }}}stylesheets/govuk-template.css?0.19.1" media="screen" rel="stylesheet" /><!--<![endif]-->
+    <!--[if IE 6]><link href="{{{ assetPath }}}stylesheets/govuk-template-ie6.css?0.19.1" media="screen" rel="stylesheet" /><![endif]-->
+    <!--[if IE 7]><link href="{{{ assetPath }}}stylesheets/govuk-template-ie7.css?0.19.1" media="screen" rel="stylesheet" /><![endif]-->
+    <!--[if IE 8]><link href="{{{ assetPath }}}stylesheets/govuk-template-ie8.css?0.19.1" media="screen" rel="stylesheet" /><![endif]-->
+    <link href="{{{ assetPath }}}stylesheets/govuk-template-print.css?0.19.1" media="print" rel="stylesheet" />
+
+    <!--[if IE 8]><link href="{{{ assetPath }}}stylesheets/fonts-ie8.css?0.19.1" media="all" rel="stylesheet" /><![endif]-->
+    <!--[if gte IE 9]><!--><link href="{{{ assetPath }}}stylesheets/fonts.css?0.19.1" media="all" rel="stylesheet" /><!--<![endif]-->
+    <!--[if lt IE 9]><script src="{{{ assetPath }}}javascripts/ie.js?0.19.1"></script><![endif]-->
+
+    <link rel="shortcut icon" href="{{{ assetPath }}}images/favicon.ico?0.19.1" type="image/x-icon" />
+    <link rel="mask-icon" href="{{{ assetPath }}}images/gov.uk_logotype_crown.svg?0.19.1" color="#0b0c0c">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{{ assetPath }}}images/apple-touch-icon-152x152.png?0.19.1">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{{ assetPath }}}images/apple-touch-icon-120x120.png?0.19.1">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{{ assetPath }}}images/apple-touch-icon-76x76.png?0.19.1">
+    <link rel="apple-touch-icon-precomposed" href="{{{ assetPath }}}images/apple-touch-icon-60x60.png?0.19.1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="{{{ assetPath }}}images/opengraph-image.png?0.19.1">
+
+    {{> head }}
+  </head>
 <body>
-	<table width="100%" cellpadding="0" cellspacing="0" border="0">
-		<tr>
-			<td style="width:100%;" valign="top" align="left">
-				<table width="100%" cellpadding="0" cellspacing="0" border="0">
-					<tr>
-						<td colspan="5" valign="top" align="left" style="text-align:center;">
-							<table cellpadding="2" cellspacing="0" border="0" width="100%" class="table3">
-								<tr>
-									<td style="width:<wpdisplay disp=wp.container.width>" valign="top" align="left">
+ <div class="worldpay-wrapper">
 
 {{{content}}}
 
+ </div>
 
-								</td>
-							</tr>
-
-						</table>
-						</td>
-					</tr>
-					<tr>
-						<td colspan="5" class="footer"><wpdisplay msg="footer.copy" stylize=footer></td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-	</table>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 

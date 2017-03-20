@@ -1,590 +1,306 @@
 <div class="header clean">
     <header class="clean" role="banner">
         <h1>
-      <img src="https://payments.worldpay.com/resources/hpp/assets/static/20.0/img/worldpay-logo.svg" alt="Worldpay" />
-    </h1>
+         <img src="https://payments.worldpay.com/resources/hpp/assets/static/20.0/img/worldpay-logo.svg" alt="Worldpay" />
+      </h1>
     </header>
+</div>
+<table class="check-your-answers">
+    <tbody>
+        <tr>
+            <th scope="row" style="width:30%;">
+                Payment reference:
+            </th>
+            <td class="data">
+                f1694c8c-4258-4cab-8a8f-f0c523442c6b
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" style="width:30%;">
+                Description
+            </th>
+            <td class="data">
+                2016-17 Coarse 1 day 2 Rod Licence (Full) {{licenceType}}
+            </td>
+        </tr>
+        <tr>
+            <th scope="row" style="width:30%;">
+                Amount (GBP)
+            </th>
+            <td class="data">
+                £3.75 {{cost}}
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div class="paymentMethods-thumbs clearfix">
+    <div class="smallIcons">
+        <input type="hidden" id="securityCodeVisibilityTypeVISA-SSL" name="securityCodeVisibilityTypeVISA-SSL" class="securityCodeVisibilityType VISA-SSL" value="MANDATORY">
+        <img id="verifiedByvisa-ssl" class="small-icon threeds VISA-SSL hidden" title="3D Secure" src="https://cdn-test.worldpay.com/resources/hpp/assets/static/20.0/img/logos/verified-by-visa-ssl.png" alt="" draggable="false">
+        <img class="small-icon card VISA-SSL" title="VISA" src="https://cdn-test.worldpay.com/resources/hpp/assets/static/20.0/img/logos/visa_115x72.png" alt="" draggable="false">
+        <input type="hidden" id="securityCodeVisibilityTypeMAESTRO-SSL" name="securityCodeVisibilityTypeMAESTRO-SSL" class="securityCodeVisibilityType MAESTRO-SSL" value="MANDATORY">
+        <img id="verifiedBymaestro-ssl" class="small-icon threeds MAESTRO-SSL hidden" title="3D Secure" src="https://cdn-test.worldpay.com/resources/hpp/assets/static/20.0/img/logos/verified-by-maestro-ssl.png" alt="" draggable="false">
+        <img class="small-icon card MAESTRO-SSL" title="Maestro" src="https://cdn-test.worldpay.com/resources/hpp/assets/static/20.0/img/logos/maestro_115x72.png" alt="" draggable="false">
+        <input type="hidden" id="securityCodeVisibilityTypeECMC-SSL" name="securityCodeVisibilityTypeECMC-SSL" class="securityCodeVisibilityType ECMC-SSL" value="MANDATORY">
+        <img id="verifiedByecmc-ssl" class="small-icon threeds ECMC-SSL hidden" title="3D Secure" src="https://cdn-test.worldpay.com/resources/hpp/assets/static/20.0/img/logos/verified-by-ecmc-ssl.png" alt="" draggable="false">
+        <img class="small-icon card ECMC-SSL" title="Mastercard" src="https://cdn-test.worldpay.com/resources/hpp/assets/static/20.0/img/logos/mastercard_115x72.png" alt="" draggable="false">
     </div>
-    <div role="main" id="main">
-        <div class="box summary clearfix summary-hide-mobile">
-            <div class="details order-summary collapsible-section">
-                <h2 class="collapsible-section-header btn-toggle-summary desktop-only section-header" role="button" aria-controls="orderSummarySection" aria-expanded="true">
-        <span tabindex="0">
-        <span class="icon icon-collapsible" aria-hidden="true"></span>
-        Order summary
-        </span>
-      </h2>
-                <h2 class="collapsible-section-header btn-toggle-summary print-no mobile-only section-header" role="button" aria-controls="orderSummarySection" aria-expanded="true">
-        <span tabindex="0">
-        <span class="icon icon-collapsible" aria-hidden="true"></span>
-        <strong>
-        Amount(GBP):
-        </strong>
-        <span class="normalfont">
-        £3.75
-        </span>
-        </span>
-      </h2>
-                <table class="collapsible-section-detail" role="region" id="orderSummarySection">
-                    <tr class="clearfix">
-                        <th class="field-label">
-                            Payment reference:
-                        </th>
-                        <td class="summaryRef">
-                            00be2bae-60bc-46c1-824a-58e47365ea73
-                        </td>
-                    </tr>
-                    <tr class="clearfix">
-                        <th class="field-label">
-                            Description:
-                        </th>
-                        <td class="summaryDesc">
-                            2016-17 Coarse 1 day 2 Rod Licence (Full)
-                        </td>
-                    </tr>
-                    <tr class="clearfix summaryAmount desktop-only">
-                        <th class="field-label">
-                            <strong>
-            Amount (GBP):
-            </strong>
-                        </th>
-                        <td class="summaryAmount">
-                            £3.75
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div id="dynamic-content">
-            <div role="form" class="box payment-details" id="paymentDetails" data-page-title="Card Details">
-                <div class="paymentMethods-thumbs clearfix">
-                    <div class="smallIcons">
-                        <input type="hidden" id='securityCodeVisibilityTypeVISA-SSL' name="securityCodeVisibilityTypeVISA-SSL" class='securityCodeVisibilityType VISA-SSL' value="MANDATORY" />
-                        <img id='verifiedByvisa-ssl' class='small-icon threeds VISA-SSL' title='3D Secure' src='https://payments.worldpay.com/resources/hpp/assets/static/20.0/img/logos/verified-by-visa-ssl.png' alt="" draggable="false" />
-                        <img class='small-icon card VISA-SSL' title='VISA' src='https://payments.worldpay.com/resources/hpp/assets/static/20.0/img/logos/visa_115x72.png' alt="" draggable="false" />
-                        <input type="hidden" id='securityCodeVisibilityTypeMAESTRO-SSL' name="securityCodeVisibilityTypeMAESTRO-SSL" class='securityCodeVisibilityType MAESTRO-SSL' value="MANDATORY" />
-                        <img id='verifiedBymaestro-ssl' class='small-icon threeds MAESTRO-SSL' title='3D Secure' src='https://payments.worldpay.com/resources/hpp/assets/static/20.0/img/logos/verified-by-maestro-ssl.png' alt="" draggable="false" />
-                        <img class='small-icon card MAESTRO-SSL' title='Maestro' src='https://payments.worldpay.com/resources/hpp/assets/static/20.0/img/logos/maestro_115x72.png' alt="" draggable="false" />
-                        <input type="hidden" id='securityCodeVisibilityTypeECMC-SSL' name="securityCodeVisibilityTypeECMC-SSL" class='securityCodeVisibilityType ECMC-SSL' value="MANDATORY" />
-                        <img id='verifiedByecmc-ssl' class='small-icon threeds ECMC-SSL' title='3D Secure' src='https://payments.worldpay.com/resources/hpp/assets/static/20.0/img/logos/verified-by-ecmc-ssl.png' alt="" draggable="false" />
-                        <img class='small-icon card ECMC-SSL' title='Mastercard' src='https://payments.worldpay.com/resources/hpp/assets/static/20.0/img/logos/mastercard_115x72.png' alt="" draggable="false" />
-                    </div>
-                </div>
-                <h2 class="clearfix desktop-only section-header">
-        <span class="no-wrap box-title">
-        Payment details
-        <span class="note"><em class="required-field">*</em> Indicates a required field</span>
-        </span>
-      </h2>
-                <form id="command" novalidate="novalidate" class="form-validation" action="https://payments.worldpay.com/app/hpp/payment/multicard/process" method="post">
-                    <script type="text/javascript">
-                        var validationRules = {
-                            'commandName': 'command',
-                            'config': {},
-                            'rules': [{
-                                'el': 'cardNumber',
-                                'type': 'CreditCard',
-                                're': /^[0-9]{12,20}$/,
-                                'message': 'Enter a valid card number',
-                                'payload': {},
-                                'messageMandatory': 'Enter a valid card number',
-                                'minSize': 12,
-                                'maxSize': 20,
-                                'activeBinRangeValidation': false
-                            }, {
-                                'el': 'cardholderName',
-                                'type': 'MandatoryString',
-                                're': /^.{1,30}$/,
-                                'message': 'Enter a valid cardholder\'s name',
-                                'payload': {},
-                                'messageMandatory': 'Enter a valid cardholder\'s name',
-                                'minSize': 1,
-                                'maxSize': 30,
-                                'isANumber': false
-                            }, {
-                                'el': 'instalments',
-                                'type': 'Instalments',
-                                're': null,
-                                'message': 'Select a valid number of instalments',
-                                'payload': {},
-                                'messageMandatory': 'Select a valid number of instalments'
-                            }, {
-                                'el': 'cpfOrCnpj',
-                                'type': 'ValidCpfOrCnpj',
-                                're': /^(\d(([ \-\s\.\/]*\d){9}|([ \-\s\.\/]*\d){12})\d[ \-\s\.\/]*)?$/,
-                                'message': 'Enter a valid CPF\/CNPJ',
-                                'payload': {},
-                                'messageMandatory': 'Enter a valid CPF\/CNPJ',
-                                'mandatory': false
-                            }, {
-                                'el': 'securityCode',
-                                'type': 'SecurityCode',
-                                're': /^(\d+)?$/,
-                                'message': 'Enter a valid security code',
-                                'payload': {},
-                                'messageMandatory': 'Enter a valid security code',
-                                'minSize': 3,
-                                'maxSize': 4,
-                                'isANumber': true
-                            }, {
-                                'el': 'expiryDate',
-                                'type': 'ValidExpiryDate',
-                                're': null,
-                                'message': 'Expiry date must be in the future',
-                                'payload': {},
-                                'messageMandatory': 'Enter a valid month and year',
-                                'monthField': '#expiryMonth',
-                                'yearField': '#expiryYear',
-                                'isMandatory': true
-                            }]
-                        }
-                    </script>
-                    <fieldset id="cardDetails">
-                        <input id="hiddenSelectedPaymentMethod" type="hidden" name="selectedPaymentMethodName" value="" />
-                        <div class="row pair clearfix">
-                            <p class="field-wrapper first" data-mandatory="true">
-                                <label for="cardNumber" id="cardNumberLabel" class="cardNumberClass field-label">
-              Card number
-              <em class="required-field">*</em>
-              <span class="validity-indicator valid icon icon-tick"></span>
-              <span class="validity-indicator invalid icon icon-cross"></span>
-              </label>
-                                <input id="cardNumber" name="cardNumber" autofocus="autofocus" pattern="[0-9\s]{11,24}" role="textbox" class="textbox required cardNumber UNKNOWN" type="tel" data-card-grouping="4,4,4,4,4" value="" maxlength="24" autocomplete="off" />
-                                <small class="error-hint">&nbsp;</small>
-                            </p>
-                            <p class="field-wrapper last" data-mandatory="true">
-                                <label for="cardholderName" id="cardholderNameLabel" class="cardholderNameClass field-label">
-              Cardholder's name
-              <em class="required-field">*</em>
-              <span class="validity-indicator valid icon icon-tick"></span>
-              <span class="validity-indicator invalid icon icon-cross"></span>
-              </label>
-                                <input id="cardholderName" name="cardholderName" role="textbox" class="textbox" type="text" value="test test" maxlength="30" />
-                                <small class="error-hint">&nbsp;</small>
-                            </p>
-                        </div>
-                        <div class="row pair clearfix section-details-bottom">
-                            <p class="field-wrapper first" data-mandatory="true">
-                                <label for="expiryMonth" id="expiryMonthLabel" class="expiryMonthClass field-label">
-              Expiry date
-              <em class="required-field">*</em>
-              <span class="validity-indicator valid icon icon-tick"></span>
-              <span class="validity-indicator invalid icon icon-cross"></span>
-              </label>
-                                <select id="expiryMonth" name="expiryDate.expiryMonth" class="dropdown ctr-month small">
-                <option value="" selected="selected">
-                  Month
-                </option>
-                <option value="01">01</option>
-                <option value="02">02</option>
-                <option value="03">03</option>
-                <option value="04">04</option>
-                <option value="05">05</option>
-                <option value="06">06</option>
-                <option value="07">07</option>
-                <option value="08">08</option>
-                <option value="09">09</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-              </select>
-                                <select id="expiryYear" name="expiryDate.expiryYear" class="dropdown ctr-year small" aria-label="Expiry year">
-                <option value="" selected="selected">
-                  Year
-                </option>
-                <option value="2017">2017</option>
-                <option value="2018">2018</option>
-                <option value="2019">2019</option>
-                <option value="2020">2020</option>
-                <option value="2021">2021</option>
-                <option value="2022">2022</option>
-                <option value="2023">2023</option>
-                <option value="2024">2024</option>
-                <option value="2025">2025</option>
-                <option value="2026">2026</option>
-                <option value="2027">2027</option>
-                <option value="2028">2028</option>
-                <option value="2029">2029</option>
-                <option value="2030">2030</option>
-                <option value="2031">2031</option>
-                <option value="2032">2032</option>
-                <option value="2033">2033</option>
-                <option value="2034">2034</option>
-                <option value="2035">2035</option>
-                <option value="2036">2036</option>
-              </select>
-                                <small class="error-hint">&nbsp;</small>
-                            </p>
-                            <noscript>
-            </noscript>
-                            <input type="hidden" id="securityCodeVisibilityType" name="securityCodeVisibilityType" value="MANDATORY" />
-                            <div id="securityCodeDivId" class="securityCode ">
-                                <p class="field-wrapper last" data-mandatory="true">
-                                    <label for="securityCode" id="securityCodeLabel" class="securityCodeClass field-label">
-                Security code
-                <em class="required-field">*</em>
-                <span class="validity-indicator valid icon icon-tick"></span>
-                <span class="validity-indicator invalid icon icon-cross"></span>
-                </label>
-                                    <span class="pin-wrapper">
-                <input id="securityCode" name="securityCode" data-minlength="3" class="textbox pin" type="tel" value="" maxlength="4" autocomplete="off"/>
-                <img    id="pin-helpimg" src="https://payments.worldpay.com/resources/hpp/assets/static/20.0/img/pin-card-multicard.png"
-                  alt="" title='Security code'
-                  class="pin-default" draggable="false"
-                  />
+</div>
+<h2 class="clearfix desktop-only section-header">
+   <span class="no-wrap box-title">
+   Payment details
+   <span class="note"><em class="required-field">*</em> Indicates a required field</span>
+   </span>
+</h2>
+<form id="command" novalidate="novalidate" class="form-validation" action="https://payments-test.worldpay.com/app/hpp/payment/multicard/process" method="post">
+    <script type="text/javascript">
+        var validationRules = {
+            'commandName': 'command',
+            'config': {},
+            'rules': [{
+                'el': 'cardNumber',
+                'type': 'CreditCard',
+                're': /^[0-9]{12,20}$/,
+                'message': 'Enter a valid card number',
+                'payload': {},
+                'messageMandatory': 'Enter a valid card number',
+                'minSize': 12,
+                'maxSize': 20,
+                'activeBinRangeValidation': false
+            }, {
+                'el': 'cpfOrCnpj',
+                'type': 'ValidCpfOrCnpj',
+                're': /^(\d(([ \-\s\.\/]*\d){9}|([ \-\s\.\/]*\d){12})\d[ \-\s\.\/]*)?$/,
+                'message': 'Enter a valid CPF\/CNPJ',
+                'payload': {},
+                'messageMandatory': 'Enter a valid CPF\/CNPJ',
+                'mandatory': false
+            }, {
+                'el': 'securityCode',
+                'type': 'SecurityCode',
+                're': /^(\d+)?$/,
+                'message': 'Enter a valid security code',
+                'payload': {},
+                'messageMandatory': 'Enter a valid security code',
+                'minSize': 3,
+                'maxSize': 4,
+                'isANumber': true
+            }, {
+                'el': 'expiryDate',
+                'type': 'ValidExpiryDate',
+                're': null,
+                'message': 'Expiry date must be in the future',
+                'payload': {},
+                'messageMandatory': 'Enter a valid month and year',
+                'monthField': '#expiryMonth',
+                'yearField': '#expiryYear',
+                'isMandatory': true
+            }, {
+                'el': 'instalments',
+                'type': 'Instalments',
+                're': null,
+                'message': 'Select a valid number of instalments',
+                'payload': {},
+                'messageMandatory': 'Select a valid number of instalments'
+            }, {
+                'el': 'cardholderName',
+                'type': 'MandatoryString',
+                're': /^.{1,30}$/,
+                'message': 'Enter a valid cardholder\'s name',
+                'payload': {},
+                'messageMandatory': 'Enter a valid cardholder\'s name',
+                'minSize': 1,
+                'maxSize': 30,
+                'isANumber': false
+            }]
+        }
+    </script>
+    <fieldset id="cardDetails">
+        <input id="hiddenSelectedPaymentMethod" type="hidden" name="selectedPaymentMethodName" value="">
+        <div class="row pair clearfix">
+            <p class="field-wrapper first error" data-mandatory="true">
+                <label for="cardNumber" id="cardNumberLabel" class="cardNumberClass field-label">
+            Card number
+            <em class="required-field">*</em>
+            <span class="validity-indicator valid icon icon-tick"></span>
+            <span class="validity-indicator invalid icon icon-cross"></span>
+            </label>
+                <input id="cardNumber" name="cardNumber" autofocus="autofocus" pattern="[0-9\s]{11,24}" role="textbox" class="textbox required cardNumber UNKNOWN" type="tel" data-card-grouping="4,4,4,4,4" value="" maxlength="24" autocomplete="off">
+                <small class="error-hint">Enter a valid card number</small>
+            </p>
+            <p class="field-wrapper last" data-mandatory="true">
+                <label for="cardholderName" id="cardholderNameLabel" class="cardholderNameClass field-label">
+            Cardholder's name
+            <em class="required-field">*</em>
+            <span class="validity-indicator valid icon icon-tick"></span>
+            <span class="validity-indicator invalid icon icon-cross"></span>
+            </label>
+                <input id="cardholderName" name="cardholderName" role="textbox" class="textbox" type="text" value="ew ewq" maxlength="30">
                 <small class="error-hint">&nbsp;</small>
-                </span>
-                                    <small id="pin-helptxt" class="pin-help security-code-text clearfix cardAny">
-                3 digits on the back of the card or 4 digits on the front of card
-                </small>
-                                    <span class="cardrule hidden cardDefault" data-pin-suffix="3" data-pin-minlength="3" data-pin-maxlength="3" data-pin-message="Last 3 digits on the back of card">
-                <img    src="https://payments.worldpay.com/resources/hpp/assets/static/20.0/img/pin-basic.png"
-                  class="cardrule-img hidden"  draggable="false" alt=""
-                  />
-                </span>
-                                </p>
-                            </div>
-                        </div>
-                    </fieldset>
-                    <fieldset id="combinedDetails">
-                        <fieldset id="billingAddress">
-                            <div id="billingContainerPanel1Way" class="editable-panel">
-                                <div id="billingContainerPanel1wayTop" class="panel1wayTop">
-                                    <div id="billingContainerPanel1wayContainer" class="panelHide panelRo panel">
-                                        <h2 id="billingContainerPanel1wayTitle" class="panelTitle section-header">
-                    <span>
-                    <span id="billingContainerPanel1wayTitleExpander" class="panelHide"></span>
-                    <span class="panelTitleText">
-                    Billing address
-                    </span>
-                    <span id="billingContainerPanel1wayTitleError" class="iconPanel panelHide"></span>
-                    </span>
-                  </h2>
-                                        <span id="billingContainerPanel1wayTitleEditButton" role="button" class="panel-icon-edit panelHide" title="Edit" tabindex="0">
-                  Edit
-                  <span class="icon icon-expand" aria-hidden="true"></span>
-                                        </span>
-                                        <div id="billingAddressPanelRo" class="readonly-panel">
-                                            <div class="row pair clearfix section-details-bottom">
-                                                <span id="billingAddressLine1Ro" class="line1 readonly-field" data-field="line1">
-                      APARTMENT 78, GLADSTONE MEWS,
-                      </span>
-                                                <span id="billingAddressLine2Ro" class="line2 readonly-field" data-field="line2">
-                      GLADSTONE STREET,
-                      </span>
-                                                <span id="billingAddressLine3Ro" class="line3 readonly-field" data-field="line3">
-                      </span>
-                                                <span id="billingAddressCityRo" class="city readonly-field" data-field="city">
-                      WARRINGTON,
-                      </span>
-                                                <span id="billingAddressRegionRo" class="region readonly-field" data-field="region">
-                      </span>
-                                                <span id="billingAddressPostcodeRo" class="postcode readonly-field" data-field="postcode">
-                      WA2 7LG,
-                      </span>
-                                                <span id="billingAddressCountryRo" class="country-code readonly-field" data-field="country-code">
-                      United Kingdom
-                      </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="billingContainerPanel1wayBottom">
-                                    <div id="billingContainerPanel1wayBottomContainer" class="panelShow panelEd panel">
-                                        <h2 class="panelTitle section-header">
-                    Billing address
-                  </h2>
-                                        <span id="EditButton" role="button" class="panel-icon-close panelHide" title="" tabindex="0">
-                  Close
-                  <span class="icon icon-collapse" aria-hidden="true"></span>
-                                        </span>
-                                        <div id="billingAddressPanelEd" class="editContainer editable-address validation" data-integration-type="WPG">
-                                            <div class="row pair clearfix">
-                                                <p class="field-wrapper lefty">
-                                                    <label for="billingAddressLine1" id="billingAddressLine1Label" class="billingAddressLine1Class field-label">
-                        Address 1
-                        <span class="validity-indicator valid icon icon-tick"></span>
-                        <span class="validity-indicator invalid icon icon-cross"></span>
-                        </label>
-                                                    <span class="validation-container">
-                        <span class="icon icon-cross"></span>
-                                                    </span>
-                                                    <span class="inputContainer righty">
-                        <input id="billingAddressLine1" name="billingAddress.line1" class="textbox edit-field line1" type="text" data-field="line1" value="APARTMENT 78, GLADSTONE MEWS" maxlength="85"/>
-                        <small class="error-hint">Enter a valid address 1</small>
-                        </span>
-                                                </p>
-                                                <p class="field-wrapper lefty">
-                                                    <label for="billingAddressLine2" id="billingAddressLine2Label" class="billingAddressLine2Class field-label">
-                        Address 2
-                        <span class="validity-indicator valid icon icon-tick"></span>
-                        <span class="validity-indicator invalid icon icon-cross"></span>
-                        </label>
-                                                    <span class="validation-container">
-                        </span>
-                                                    <span class="inputContainer righty">
-                        <input id="billingAddressLine2" name="billingAddress.line2" class="textbox edit-field line2" type="text" data-field="line2" value="GLADSTONE STREET" maxlength="85"/>
-                        <small class="error-hint">&nbsp;</small>
-                        </span>
-                                                </p>
-                                                <p class="field-wrapper lefty">
-                                                    <label for="billingAddressLine3" id="billingAddressLine3Label" class="billingAddressLine3Class field-label">
-                        Address 3
-                        <span class="validity-indicator valid icon icon-tick"></span>
-                        <span class="validity-indicator invalid icon icon-cross"></span>
-                        </label>
-                                                    <span class="validation-container">
-                        </span>
-                                                    <span class="inputContainer righty">
-                        <input id="billingAddressLine3" name="billingAddress.line3" class="textbox edit-field line3" type="text" data-field="line3" value="" maxlength="85"/>
-                        <small class="error-hint">&nbsp;</small>
-                        </span>
-                                                </p>
-                                            </div>
-                                            <div class="row pair clearfix">
-                                                <p class="field-wrapper lefty">
-                                                    <label for="billingAddressCity" id="billingAddressCityLabel" class="billingAddressCityClass field-label">
-                        Town/City
-                        <span class="validity-indicator valid icon icon-tick"></span>
-                        <span class="validity-indicator invalid icon icon-cross"></span>
-                        </label>
-                                                    <span class="validation-container">
-                        <span class="icon icon-cross"></span>
-                                                    </span>
-                                                    <span class="inputContainer righty">
-                        <input id="billingAddressCity" name="billingAddress.city" class="textbox edit-field city" type="text" data-field="city" value="WARRINGTON" maxlength="50"/>
-                        <small class="error-hint">Enter a valid town/city</small>
-                        </span>
-                                                </p>
-                                            </div>
-                                            <div class="row pair clearfix">
-                                                <p class="field-wrapper lefty">
-                                                    <label for="billingAddressRegion" id="billingAddressRegionLabel" class="billingAddressRegionClass field-label">
-                        State/Region
-                        <span class="validity-indicator valid icon icon-tick"></span>
-                        <span class="validity-indicator invalid icon icon-cross"></span>
-                        </label>
-                                                    <span class="validation-container">
-                        </span>
-                                                    <span class="inputContainer righty">
-                        <input id="billingAddressRegion" name="billingAddress.region" class="textbox edit-field region" type="text" data-field="region" value="" maxlength="50"/>
-                        <small class="error-hint">Enter a valid state/region</small>
-                        </span>
-                                                </p>
-                                            </div>
-                                            <div class="row pair clearfix">
-                                                <p class="field-wrapper lefty">
-                                                    <label for="billingAddressPostcode" id="billingAddressPostcodeLabel" class="billingAddressPostcodeClass field-label">
-                        Postcode/Zip code
-                        <span class="validity-indicator valid icon icon-tick"></span>
-                        <span class="validity-indicator invalid icon icon-cross"></span>
-                        </label>
-                                                    <span class="validation-container">
-                        <span class="icon icon-cross"></span>
-                                                    </span>
-                                                    <span class="inputContainer righty">
-                        <input id="billingAddressPostcode" name="billingAddress.postcode" class="textbox edit-field postcode" type="text" data-field="postcode" value="WA2 7LG" maxlength="15"/>
-                        <small class="error-hint">Enter a valid postcode/zip code</small>
-                        </span>
-                                                </p>
-                                            </div>
-                                            <div class="row pair clearfix">
-                                                <p class="field-wrapper lefty">
-                                                    <label for="billingAddressCountry" id="billingAddressCountryLabel" class="billingAddressCountryClass field-label">
-                        Country
-                        <span class="validity-indicator valid icon icon-tick"></span>
-                        <span class="validity-indicator invalid icon icon-cross"></span>
-                        </label>
-                                                    <span class="validation-container">
-                        <span class="icon icon-cross"></span>
-                                                    </span>
-                                                    <span class="inputContainer righty">
-                          <select id="billingAddressCountry" name="billingAddress.countryCode" class="dropdown edit-field country-code" data-field="country-code">
-                            <option value="">Select</option>
-                            <option value="One">One</option>
-                            <option value="Two">Two</option>
-                          </select>
-                          <small class="error-hint">Enter a valid country</small>
-                        </span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <input type="button" value='Confirm' id="billingContainerPanelHideButtonL" class="button panelHideButton panelHide" />
-                                        <input type="button" value='Cancel changes' id="billingContainerPanelDiscardButtonL" class="button panelDiscardButton panelHide" />
-                                    </div>
-                                </div>
-                            </div>
-                        </fieldset>
-                        <fieldset id="shippingAddress">
-                            <div id="shippingContainerPanel1Way" class="editable-panel">
-                                <div id="shippingContainerPanel1wayTop" class="panel1wayTop">
-                                </div>
-                                <div id="shippingContainerPanel1wayBottom">
-                                </div>
-                            </div>
-                        </fieldset>
-                        <fieldset id="contactDetails">
-                            <div id="contactContainerPanel1Way" class="editable-panel">
-                                <div id="contactContainerPanel1wayTop" class="panel1wayTop">
-                                    <div id="contactContainerPanel1wayContainer" class="panelHide panelRo panel">
-                                        <h2 id="contactContainerPanel1wayTitle" class="panelTitle section-header">
-                    <span>
-                    <span id="contactContainerPanel1wayTitleExpander" class="panelHide"></span>
-                    <span class="panelTitleText">
-                    Contact details
-                    </span>
-                    <span id="contactContainerPanel1wayTitleError" class="iconPanel panelHide"></span>
-                    </span>
-                  </h2>
-                                        <span id="contactContainerPanel1wayTitleEditButton" role="button" class="panel-icon-edit panelHide" title="Edit" tabindex="0">
-                  Edit
-                  <span class="icon icon-expand" aria-hidden="true"></span>
-                                        </span>
-                                        <div id="contactDetailsPanelRo" class="readonly-panel">
-                                            <div class="row pair clearfix section-details-bottom">
-                                                <span id="contactDetailscontactTelephoneRo" class="phone-number readonly-field" data-field="phoneNumber">
-                      </span>
-                                                <span id="contactDetailscontactEmailRo" class="email-address readonly-field" data-field="emailAddress">
-                      </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="contactContainerPanel1wayBottom">
-                                    <div id="contactContainerPanel1wayBottomContainer" class="panelShow panelEd panel">
-                                        <h2 class="panelTitle section-header">
-                    Contact details
-                  </h2>
-                                        <span id="EditButton" role="button" class="panel-icon-close panelHide" title="" tabindex="0">
-                  Close
-                  <span class="icon icon-collapse" aria-hidden="true"></span>
-                                        </span>
-                                        <div id="contactDetailsPanelEd" class="editContainer editable-contact-details validation">
-                                            <div class="row pair clearfix section-details-bottom">
-                                                <p class="field-wrapper lefty">
-                                                    <label for="tel" id="telLabel" class="telClass field-label">
-                        Phone number
-                        <span class="validity-indicator valid icon icon-tick"></span>
-                        <span class="validity-indicator invalid icon icon-cross"></span>
-                        </label>
-                                                    <span class="validation-container">
-                        <span class="icon icon-cross"></span>
-                                                    </span>
-                                                    <span class="inputContainer righty">
-                        <input id="tel" name="contactTelephone" class="textbox edit-field phone-number" type="tel" data-field="phoneNumber" value="" maxlength="30"/>
-                        <small class="error-hint">Enter a valid phone number</small>
-                        </span>
-                                                </p>
-                                                <p class="field-wrapper lefty">
-                                                    <label for="email" id="emailLabel" class="emailClass field-label">
-                        Email address
-                        <span class="validity-indicator valid icon icon-tick"></span>
-                        <span class="validity-indicator invalid icon icon-cross"></span>
-                        </label>
-                                                    <span class="validation-container">
-                        <span class="icon icon-cross"></span>
-                                                    </span>
-                                                    <span class="inputContainer righty">
-                        <input id="email" name="contactEmail" class="textbox edit-field email-address" type="email" data-field="emailAddress" value="" maxlength="80"/>
-                        <small class="error-hint">Enter a valid email address</small>
-                        </span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <input type="button" value='Confirm' id="contactContainerPanelHideButtonL" class="button panelHideButton panelHide" />
-                                        <input type="button" value='Cancel changes' id="contactContainerPanelDiscardButtonL" class="button panelDiscardButton panelHide" />
-                                    </div>
-                                </div>
-                            </div>
-                        </fieldset>
-                    </fieldset>
-                    <div class="footerSummary mobile-only">
-                        <div class="details order-summary collapsible-section">
-                            <h2 class="collapsible-section-header btn-toggle-summary desktop-only section-header" role="button" aria-controls="orderSummarySection" aria-expanded="true">
-              <span tabindex="0">
-              <span class="icon icon-collapsible" aria-hidden="true"></span>
-              Order summary
-              </span>
-            </h2>
-                            <h2 class="collapsible-section-header btn-toggle-summary print-no mobile-only section-header" role="button" aria-controls="orderSummarySection" aria-expanded="true">
-              <span tabindex="0">
-              <span class="icon icon-collapsible" aria-hidden="true"></span>
-              <strong>
-              Amount(GBP):
-              </strong>
-              <span class="normalfont">
-              £3.75
-              </span>
-              </span>
-            </h2>
-                            <table class="collapsible-section-detail" role="region" id="orderSummarySection">
-                                <tr class="clearfix">
-                                    <th class="field-label">
-                                        Payment reference:
-                                    </th>
-                                    <td class="summaryRef">
-                                        00be2bae-60bc-46c1-824a-58e47365ea73
-                                    </td>
-                                </tr>
-                                <tr class="clearfix">
-                                    <th class="field-label">
-                                        Description:
-                                    </th>
-                                    <td class="summaryDesc">
-                                        2016-17 Coarse 1 day 2 Rod Licence (Full)
-                                    </td>
-                                </tr>
-                                <tr class="clearfix summaryAmount desktop-only">
-                                    <th class="field-label">
-                                        <strong>
-                  Amount (GBP):
-                  </strong>
-                                    </th>
-                                    <td class="summaryAmount">
-                                        £3.75
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                    <fieldset class="bottom clearfix">
-                        <div class="align-r cardMakePaymentButton">
-                            <input type="submit" class="button btn-make-payment" value="Make Payment" id="submitButton" />
-                        </div>
-                        <a id="cancelButton" href="https://payments.worldpay.com/app/hpp/payment/cancel/confirm" data-cancel-url="https://payments.worldpay.com/app/hpp/payment/cancel" class="button btn-cancel" draggable="false">
-          Cancel payment
-          </a>
-                    </fieldset>
-                    <div>
-                        <input type="hidden" name="_csrf" value="2cc88a8c-7e63-4a7b-8da9-e71ec9b13725" />
-                    </div>
-                </form>
-            </div>
-            <div class="box loading-box failure">
-                <div class="info">
-                    <img class="logo-powered-by" src="https://payments.worldpay.com/resources/hpp/assets/static/20.0/img/logos/worldpay/powered-by-worldpay.svg" alt="" />
-                    <div class="loading-dots" aria-hidden="true">
-                        <div class="icon icon-circle dot-1"></div>
-                        <div class="icon icon-circle dot-2"></div>
-                        <div class="icon icon-circle dot-3"></div>
-                        <div class="icon icon-circle dot-4"></div>
-                        <div class="icon icon-circle dot-5"></div>
-                        <div class="icon icon-circle dot-6"></div>
-                        <div class="icon icon-circle dot-7"></div>
-                        <div class="icon icon-circle dot-8"></div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <div role="contentinfo" class="right" lang="en">
-        <div class="wp-footer" id="wpFooter-2">
-            <p class="right">
-                &copy; Worldpay 2013-2017. All rights reserved.
             </p>
         </div>
-    </div>
-    </div>
+        <div class="row pair clearfix section-details-bottom">
+            <p class="field-wrapper first" data-mandatory="true">
+                <label for="expiryMonth" id="expiryMonthLabel" class="expiryMonthClass field-label">
+            Expiry date
+            <em class="required-field">*</em>
+            <span class="validity-indicator valid icon icon-tick"></span>
+            <span class="validity-indicator invalid icon icon-cross"></span>
+            </label>
+                <select id="expiryMonth" name="expiryDate.expiryMonth" class="dropdown ctr-month small">
+               <option value="" selected="selected">
+                  Month
+               </option>
+               <option value="01">01</option>
+               <option value="02">02</option>
+               <option value="03">03</option>
+               <option value="04">04</option>
+               <option value="05">05</option>
+               <option value="06">06</option>
+               <option value="07">07</option>
+               <option value="08">08</option>
+               <option value="09">09</option>
+               <option value="10">10</option>
+               <option value="11">11</option>
+               <option value="12">12</option>
+            </select>
+                <select id="expiryYear" name="expiryDate.expiryYear" class="dropdown ctr-year small" aria-label="Expiry year">
+               <option value="" selected="selected">
+                  Year
+               </option>
+               <option value="2017">2017</option>
+               <option value="2018">2018</option>
+               <option value="2019">2019</option>
+               <option value="2020">2020</option>
+               <option value="2021">2021</option>
+               <option value="2022">2022</option>
+               <option value="2023">2023</option>
+               <option value="2024">2024</option>
+               <option value="2025">2025</option>
+               <option value="2026">2026</option>
+               <option value="2027">2027</option>
+               <option value="2028">2028</option>
+               <option value="2029">2029</option>
+               <option value="2030">2030</option>
+               <option value="2031">2031</option>
+               <option value="2032">2032</option>
+               <option value="2033">2033</option>
+               <option value="2034">2034</option>
+               <option value="2035">2035</option>
+               <option value="2036">2036</option>
+            </select>
+                <small class="error-hint">&nbsp;</small>
+            </p>
+            <noscript>
+         </noscript>
+            <input type="hidden" id="securityCodeVisibilityType" name="securityCodeVisibilityType" value="MANDATORY">
+            <div id="securityCodeDivId" class="securityCode">
+                <p class="field-wrapper last" data-mandatory="true">
+                    <label for="securityCode" id="securityCodeLabel" class="securityCodeClass field-label">
+               Security code
+               <em class="required-field">*</em>
+               <span class="validity-indicator valid icon icon-tick"></span>
+               <span class="validity-indicator invalid icon icon-cross"></span>
+               </label>
+                    <span class="pin-wrapper">
+               <input id="securityCode" name="securityCode" data-minlength="3" class="textbox pin" type="tel" value="" maxlength="4" autocomplete="off">
+               <img id="pin-helpimg" src="https://cdn-test.worldpay.com/resources/hpp/assets/static/20.0/img/pin-card-multicard.png" alt="" title="Security code" class="pin-default" draggable="false">
+               <small class="error-hint">&nbsp;</small>
+               </span>
+                    <small id="pin-helptxt" class="pin-help security-code-text clearfix cardAny">
+               3 digits on the back of the card or 4 digits on the front of card
+               </small>
+                    <span class="cardrule hidden cardDefault" data-pin-suffix="3" data-pin-minlength="3" data-pin-maxlength="3" data-pin-message="Last 3 digits on the back of card">
+               <img src="https://cdn-test.worldpay.com/resources/hpp/assets/static/20.0/img/pin-basic.png" class="cardrule-img hidden" draggable="false" alt="">
+               </span>
+                </p>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset id="combinedDetails">
+        <fieldset id="billingAddress">
+            <div id="billingContainerPanel1Way" class="editable-panel">
+                <div id="billingContainerPanel1wayTop" class="panel1wayTop">
+                    <div id="billingContainerPanel1wayContainer" class="panelHide panelRo panel" style="display: block;">
+                        <h2 class="heading-medium">Card billing address</h2>
 
-    
+
+
+                        <div class="form-group">
+                            <label for="premises" class="form-label">Building number or name</label>
+                            <span class="form-hint">For example, 47, Flat 2a or Rose Cottage</span> {{#if errors.premises}}<span class="error-message">{{errors.premises}}</span>{{/if}}
+                            <input class="form-control" id="premises" name="premises" value="{{premises}}" type="text" maxlength="100">
+                        </div>
+
+
+                        <div class="form-group {{#if errors.street}}error{{/if}}">
+                            <label for="street" class="form-label">Address line 1 (optional)</label> {{#if errors.street}}<span class="error-message">{{errors.street}}</span>{{/if}}
+                            <input class="form-control" id="street" name="street" value="{{street}}" type="text" maxlength="100">
+                        </div>
+
+                        <div class="form-group {{#if errors.locality}}error{{/if}}">
+                            <label for="locality" class="form-label">Address line 2 (optional)</label> {{#if errors.locality}}<span class="error-message">{{errors.locality}}</span>{{/if}}
+                            <input class="form-control" id="locality" name="locality" value="{{locality}}" type="text" maxlength="100">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="town" class="form-label">Town or city</label> {{#if errors.town}}<span class="error-message">{{errors.town}}</span>{{/if}}
+                            <input class="form-control" id="town" name="town" value="{{town}}" type="text" maxlength="100">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="postcode" class="form-label">Postcode</label> {{#if errors.postcode}}<span class="error-message">{{errors.postcode}}</span>{{/if}}
+                            <input class="form-control" id="postcode" name="postcode" value="{{postcode}}" type="text" maxlength="10">
+                        </div>
+
+                        <div class="form-group {{#if errors.country}}error{{/if}}">
+                            <label for="country" class="form-label">Country</label> {{#if errors.country}}<span class="error-message">{{errors.country}}</span>{{/if}}
+                            <select class="form-control" id="country" name="country">
+                              <option></option>
+                              {{#each countries}}
+                                <option value="{{text}}">{{text}}</option>
+                              {{/each}}
+                            </select>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset id="contactDetails">
+            <div id="contactContainerPanel1Way" class="editable-panel">
+                <div id="contactContainerPanel1wayTop" class="panel1wayTop">
+                    <div id="contactContainerPanel1wayContainer" class="panelHide panelRo panel">
+                        <h2 class="heading-medium">Get a payment confirmation email from Worldpay</h2>
+                        <label class="form-label" for="contact-email">Email address</label>
+                        <input class="form-control" name="email" type="text" id="email">
+                    </div>
+                </div>
+
+        </fieldset>
+    </fieldset>
+
+    <fieldset class="bottom clearfix">
+        <div class="align-r cardMakePaymentButton">
+            <input type="submit" class="button btn-make-payment" value="Make Payment" id="submitButton">
+        </div>
+        <a id="cancelButton" href="/" class="button btn-cancel" draggable="false">
+      Cancel payment
+      </a>
+    </fieldset>
+
+</form>
+<div role="contentinfo" class="right" lang="en">
+    <div class="wp-footer" id="wpFooter-2">
+        <p class="right">
+            &copy; Worldpay 2013-2017. All rights reserved.
+        </p>
+    </div>
+</div>
+</div>

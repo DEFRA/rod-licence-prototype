@@ -1,7 +1,8 @@
 const handlers = {
   get: function (request, reply) {
     return reply.view('worldpay', null, { layout: 'layout-worldpay' }, {
-      //pageTitle: 'Check your new licence details',
+      pageTitle: 'Enter your payment details',
+      email: request.session.email,
     })
   },
   post: function (request, reply) {

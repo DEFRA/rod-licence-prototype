@@ -1,0 +1,65 @@
+.worldpay-wrapper {
+    max-width: 750px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header.clean {
+    background: none!important;
+    padding: 1em 1em 1.2em;
+}
+
+header {
+    margin: 0;
+    color: #fff;
+    padding: 15px 15px;
+}
+
+.header h1 img {
+    min-height: 2.5em;
+    max-height: 7em;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    -ms-interpolation-mode: bicubic;
+}
+
+#main {
+    background-color: #EEE;
+    border: solid 1px #DDD;
+    border-radius: .4em;
+}
+
+#main {
+    padding: .4em .4em 0;
+    margin: 0;
+}
+
+.paymentMethods-thumbs {
+    float: right;
+    max-width: 50%;
+}
+
+.paymentMethods-thumbs .small-icon {
+    float: right;
+    width: 3.4em;
+    height: 2.2em;
+    margin-right: .33em;
+    margin-bottom: .33em;
+    border: 1px solid #ddd;
+    border-radius: .4em;
+}
+
+.form-validation select.small,
+.form-validation input[type=text].small,
+.form-validation input[type=number].small {
+    width: 48%;
+}
+
+label#expiryMonthLabel {
+  display: block;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
