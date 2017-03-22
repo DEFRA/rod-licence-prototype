@@ -1,19 +1,26 @@
 {{> topOfPage }}
 <!DOCTYPE html>
 <!--[if lt IE 9]><html class="lte-ie8" lang="{{ htmlLang }}"><![endif]-->
-<!--[if gt IE 8]><!--><html lang="{{ htmlLang }}"><!--<![endif]-->
-  <head>
+<!--[if gt IE 8]><!-->
+<html lang="{{ htmlLang }}">
+<!--<![endif]-->
+
+<head>
     <meta charset="utf-8" />
     <title>{{ pageTitle }}</title>
 
-    <!--[if gt IE 8]><!--><link href="{{{ assetPath }}}stylesheets/govuk-template.css?0.19.1" media="screen" rel="stylesheet" /><!--<![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link href="{{{ assetPath }}}stylesheets/govuk-template.css?0.19.1" media="screen" rel="stylesheet" />
+    <!--<![endif]-->
     <!--[if IE 6]><link href="{{{ assetPath }}}stylesheets/govuk-template-ie6.css?0.19.1" media="screen" rel="stylesheet" /><![endif]-->
     <!--[if IE 7]><link href="{{{ assetPath }}}stylesheets/govuk-template-ie7.css?0.19.1" media="screen" rel="stylesheet" /><![endif]-->
     <!--[if IE 8]><link href="{{{ assetPath }}}stylesheets/govuk-template-ie8.css?0.19.1" media="screen" rel="stylesheet" /><![endif]-->
     <link href="{{{ assetPath }}}stylesheets/govuk-template-print.css?0.19.1" media="print" rel="stylesheet" />
 
     <!--[if IE 8]><link href="{{{ assetPath }}}stylesheets/fonts-ie8.css?0.19.1" media="all" rel="stylesheet" /><![endif]-->
-    <!--[if gte IE 9]><!--><link href="{{{ assetPath }}}stylesheets/fonts.css?0.19.1" media="all" rel="stylesheet" /><!--<![endif]-->
+    <!--[if gte IE 9]><!-->
+    <link href="{{{ assetPath }}}stylesheets/fonts.css?0.19.1" media="all" rel="stylesheet" />
+    <!--<![endif]-->
     <!--[if lt IE 9]><script src="{{{ assetPath }}}javascripts/ie.js?0.19.1"></script><![endif]-->
 
     <link rel="shortcut icon" href="{{{ assetPath }}}images/favicon.ico?0.19.1" type="image/x-icon" />
@@ -26,14 +33,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="{{{ assetPath }}}images/opengraph-image.png?0.19.1">
 
-    {{> head }}
-  </head>
+    <meta http-equiv="refresh" content="{{pageRefreshTime}}" />
+    <link rel="stylesheet" href="{{{assetPath}}}stylesheets/application.css">
+    <link rel="stylesheet" href="{{{assetPath}}}stylesheets/worldpay.css">
+    <!--[if IE 6]><link href="{{{assetPath}}}stylesheets/application-ie6.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+    <!--[if IE 7]><link href="{{{assetPath}}}stylesheets/application-ie7.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+    <!--[if IE 8]><link href="{{{assetPath}}}stylesheets/application-ie8.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+    <!-- Application version: {{appVersion}} -->
+
+    <!-- <script src="{{{assetPath}}}javascripts/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="{{{assetPath}}}javascripts/reveal.js"></script>
+    <script src="{{{assetPath}}}javascripts/selection-buttons.js"></script>
+    <script src="{{{assetPath}}}javascripts/validation.js"></script>
+    <!-- <script src="{{{assetPath}}}javascripts/date-picker.js"></script> -->
+    <script src="{{{assetPath}}}javascripts/details.polyfill.js"></script>
+    <script src="{{{assetPath}}}javascripts/jquery.history.js"></script>
+    <script src="{{{assetPath}}}javascripts/jquery.tabs.js"></script>
+    <!-- JS Tabs -->
+    <script>
+        $(function() {
+            $('section.more').tabs({
+                scrollOnload: true
+            })
+        })
+    </script>
+
+
+    <!-- <link rel="stylesheet" href="https://rawgit.com/ffoodd/a11y.css/master/css/a11y-en.css"> -->
+
+</head>
+
 <body>
- <div class="worldpay-wrapper">
+    <div class="worldpay-wrapper">
 
-{{{content}}}
+        {{{content}}}
 
- </div>
+    </div>
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
