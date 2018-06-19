@@ -279,7 +279,7 @@
                             Valid from
                         </th>
                         <td class="data" id="start-date">
-                            {{#if startDate}} {{startDate}} {{startMonth}} {{startYear}} {{else}} Not supplied {{/if}}
+                            {{#if startTime}}{{startTime}}{{/if}} on {{#if startDate}} {{startDate}} {{startMonth}} {{startYear}} {{else}} Not supplied {{/if}}
                         </td>
                         <td class="change-answer" id="change-start-date">
                             {{#if isJunior}} {{else}} {{#if isUpgrade}} {{else}} <a href="/buy/licence-start-option?returnUrl=/buy/summary" data-journey-click="start-date-changed:clicked:start-date:{{startDate}} {{startMonth}} {{startYear}}" id="buy.licence.start">
@@ -287,21 +287,6 @@
               </a>{{/if}}{{/if}}
                         </td>
                     </tr>
-                    {{#if isFull}} {{else}} {{#if isJunior}} {{else}}
-                    <tr>
-                        <th scope="row">
-                            Time
-                        </th>
-                        <td class="data" id="start-date">
-                            {{#if startTime}}{{startTime}}{{/if}}
-                        </td>
-                        <td class="change-answer" id="change-start-date">
-                            {{#if isUpgrade}} {{else}} <a href="/buy/licence-start-time?returnUrl=/buy/summary" data-journey-click="start-time-changed:clicked:start-time:{{startTime}}" id="buy.licence.start">
-                Change <span class="visuallyhidden">start time</span>
-              </a>{{/if}}
-                        </td>
-                    </tr>
-                    {{/if}} {{/if}}
                     <tr>
                         <th scope="row">
                             Number of rods
